@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cadastrojogo.controller.FXMLCadastroJogadorController">
+   <children>
+      <Label layoutX="48.0" layoutY="45.0" text="Nome Jogador:" textFill="#cbb26a" />
+      <Label layoutX="48.0" layoutY="100.0" text="Numero da Camisa:" textFill="#cbb26a" />
+      <Label layoutX="48.0" layoutY="154.0" text="Idade:" textFill="#cbb26a" />
+      <Label layoutX="48.0" layoutY="219.0" text="Nacionalidade:" textFill="#cbb26a" />
+      <Label layoutX="48.0" layoutY="279.0" text="Posição:" textFill="#cbb26a" />
+      <Label layoutX="48.0" layoutY="341.0" text="Altura:" textFill="#cbb26a" />
+      <Label layoutX="48.0" layoutY="414.0" text="Time:" textFill="#cbb26a" />
+      <JFXTextField fx:id="nomeJogador" layoutX="160.0" layoutY="41.0" prefHeight="25.0" prefWidth="226.0" />
+      <JFXTextField fx:id="NumeroCamisa" layoutX="160.0" layoutY="96.0" prefHeight="25.0" prefWidth="226.0" />
+      <JFXTextField fx:id="Idade" layoutX="160.0" layoutY="150.0" prefHeight="25.0" prefWidth="226.0" />
+      <JFXTextField fx:id="Nacionalidade" layoutX="160.0" layoutY="215.0" prefHeight="25.0" prefWidth="226.0" />
+      <JFXTextField fx:id="Posicao" layoutX="158.0" layoutY="275.0" prefHeight="25.0" prefWidth="226.0" />
+      <JFXTextField fx:id="Altura" layoutX="158.0" layoutY="337.0" prefHeight="25.0" prefWidth="226.0" />
+      <JFXComboBox fx:id="Time" layoutX="159.0" layoutY="410.0" prefHeight="25.0" prefWidth="226.0" promptText="Time" />
+      <TableView fx:id="tabelaJogador" layoutX="411.0" layoutY="24.0" prefHeight="554.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="colunaNome" prefWidth="81.0" text="Nome" />
+          <TableColumn fx:id="colunaCamisa" prefWidth="85.0" text="Camisa" />
+            <TableColumn fx:id="colunaIdade" prefWidth="77.0" text="Idade" />
+            <TableColumn fx:id="colunaAltura" prefWidth="92.0" text="Altura" />
+            <TableColumn fx:id="colunaNacionalidade" prefWidth="108.0" text="Nacionalidade" />
+            <TableColumn fx:id="colunaPosicao" prefWidth="130.0" text="Posição" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btndeletar" layoutX="149.0" layoutY="517.0" onAction="#deletar" prefHeight="37.0" prefWidth="79.0" style="-fx-background-color: cbb26a;" text="Deletar" />
+      <JFXButton fx:id="btnalterar" layoutX="246.0" layoutY="517.0" onAction="#alterar" prefHeight="37.0" prefWidth="79.0" style="-fx-background-color: cbb26a;" text="Alterar" />
+      <JFXButton fx:id="btnSalvar" layoutX="53.0" layoutY="517.0" onAction="#salvarJogador" prefHeight="37.0" prefWidth="79.0" style="-fx-background-color: cbb26a;" text="Salvar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

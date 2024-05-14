@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cadastrojogo.controller.FXMLGraficoJogoController">
+   <children>
+      <BarChart fx:id="grafico" prefHeight="600.0" prefWidth="1000.0" title="Jogos">
+        <xAxis>
+          <CategoryAxis fx:id="barraTimes" label="Times" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="barraNumerodeJogos" label="N° de Jogos" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

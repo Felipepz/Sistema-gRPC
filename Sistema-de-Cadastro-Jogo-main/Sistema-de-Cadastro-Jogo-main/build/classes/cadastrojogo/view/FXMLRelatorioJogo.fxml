@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cadastrojogo.controller.FXMLRelatorioJogoController">
+   <children>
+      <JFXButton fx:id="btnImprimir" layoutX="461.0" layoutY="540.0" onAction="#Imprimir" prefHeight="37.0" prefWidth="79.0" style="-fx-background-color: cbb26a;" text="Imprimir">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tabela" prefHeight="540.0" prefWidth="1000.0">
+         <columns>
+            <TableColumn fx:id="colunaTimeFora" prefWidth="180.0" text="Time de Fora" />
+            <TableColumn fx:id="colunaTimeCasa" prefWidth="194.0" text="Time de Casa" />
+            <TableColumn fx:id="colunaGolFora" prefWidth="189.0" text="Gol de Fora" />
+            <TableColumn fx:id="colunaGolCasa" prefWidth="198.0" text="Gol de Casa" />
+            <TableColumn fx:id="colunaArbitro" prefWidth="239.0" text="Arbitro" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cadastrojogo.controller.FXMLSobreIntegrantesController">
+   <children>
+      <Label layoutX="436.0" layoutY="214.0" text="Inserir Cartão">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="134.0" prefWidth="1000.0" style="-fx-background-color: #212121;">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="167.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/footmach2%20cópia.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="134.0" fitWidth="142.0" layoutX="858.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Logo%20participantes.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="133.0" prefHeight="474.0" prefWidth="1000.0" style="-fx-background-color: #353535;">
+         <children>
+            <Label layoutX="429.0" layoutY="71.0" prefHeight="38.0" prefWidth="142.0" text="Integrantes" textFill="#cbb26a">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Pane layoutX="136.0" layoutY="123.0" prefHeight="243.0" prefWidth="729.0" style="-fx-background-color: FFFFFF;">
+               <children>
+                  <Label fx:id="labelIntegrantes" layoutX="102.0" layoutY="87.0" prefHeight="53.0" prefWidth="575.0">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

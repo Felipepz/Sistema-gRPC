@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="412.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cadastrojogo.controller.FXMLProcessoCartaoAlterarRemoverController">
+   <children>
+      <Label layoutX="383.0" layoutY="14.0" prefHeight="30.0" prefWidth="157.0" text="Altera/Remover">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comboBoxArbitro" focusColor="#cbb26a" labelFloat="true" layoutX="170.0" layoutY="44.0" prefHeight="43.0" prefWidth="367.0" promptText="Arbitro" style="-fx-font-size: 16;" />
+      <JFXComboBox fx:id="comboBoxJogador" focusColor="#cbb26a" labelFloat="true" layoutX="170.0" layoutY="105.0" prefHeight="43.0" prefWidth="367.0" promptText="Nome Jogador" style="-fx-font-size: 16;" />
+      <JFXTextField fx:id="textFieldCorCartao" focusColor="#cbb26a" layoutX="170.0" layoutY="236.0" prefHeight="43.0" prefWidth="357.0" style="-fx-font-size: 16;" />
+      <JFXTextField fx:id="textFieldQuantidade" focusColor="#cbb26a" layoutX="170.0" layoutY="301.0" prefHeight="43.0" prefWidth="87.0" style="-fx-font-size: 16;" />
+      <JFXButton fx:id="buttonAlterar" layoutX="658.0" layoutY="343.0" onAction="#handleButtonAlterar" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: cbb26a;" text="Alterar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="buttonRemover" layoutX="844.0" layoutY="343.0" onAction="#handleButtonRemover" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: cbb26a;" text="Remover">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="43.0" fitWidth="42.0" layoutX="105.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/arbitro-de-futebol.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="105.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/jogador-de-futebol.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="42.0" layoutX="540.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo%20cartao.png" />
+         </image>
+      </ImageView>
+      <JFXListView fx:id="listViewCartoes" layoutX="658.0" layoutY="25.0" prefHeight="279.0" prefWidth="294.0" />
+      <JFXComboBox fx:id="comboBoxJogo" focusColor="#cbb26a" labelFloat="true" layoutX="170.0" layoutY="165.0" prefHeight="43.0" prefWidth="367.0" promptText="Jogo" style="-fx-font-size: 16;" />
+      <Label layoutX="83.0" layoutY="245.0" prefHeight="25.0" prefWidth="87.0" text="Cor Cartão:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="310.0" prefHeight="25.0" prefWidth="87.0" text="Quantidade:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="106.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-estádio-32.png" />
+         </image>
+      </ImageView>
+      <JFXDatePicker fx:id="datePickerData" defaultColor="#cbb26a" layoutX="296.0" layoutY="304.0" prefHeight="37.0" prefWidth="278.0" promptText="Data do cartão" />
+   </children>
+</AnchorPane>

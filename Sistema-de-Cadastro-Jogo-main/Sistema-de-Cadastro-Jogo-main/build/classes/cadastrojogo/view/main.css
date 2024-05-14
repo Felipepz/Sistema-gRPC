@@ -1,0 +1,17 @@
+.buttonFont14 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #000000;
+    -fx-background-color: #cbb26a;
+}
+
+.jfx-tab-pane .tab-header-background { 
+    -fx-background-color: #212121; 
+    -fx-text-fill-color:  #212121;
+}
+
+.tab {
+    -fx-background-color: #353535; 
+    -fx-text-fill-color:  #212121;
+    
+}

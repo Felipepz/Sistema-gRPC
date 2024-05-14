@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="412.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cadastrojogo.controller.FXMLProcessoGolsInserirController">
+   <children>
+      <Label layoutX="439.0" layoutY="14.0" text="Registrar Gol">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comboBoxJogador" focusColor="#cbb26a" layoutX="255.0" layoutY="75.0" prefHeight="25.0" prefWidth="487.0" promptText="Jogador" />
+      <JFXComboBox fx:id="comboBoxCamisaJogador" focusColor="#cbb26a" layoutX="255.0" layoutY="127.0" prefHeight="25.0" prefWidth="487.0" promptText="Camisa do jogador" />
+      <JFXComboBox fx:id="comboBoxJogo" focusColor="#cbb26a" layoutX="255.0" layoutY="172.0" prefHeight="25.0" prefWidth="487.0" promptText="Jogo" />
+      <JFXTimePicker fx:id="timePickerTempo" defaultColor="#cbb26a" layoutX="255.0" layoutY="223.0" prefHeight="25.0" prefWidth="487.0" promptText="Tempo" />
+      <JFXButton fx:id="buttonConfirmar" layoutX="822.0" layoutY="359.0" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: cbb26a;" text="Confirmar" />
+      <ImageView fitHeight="44.0" fitWidth="45.0" layoutX="194.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/camiseta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="69.0" layoutX="194.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-estádio-32.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="57.0" layoutX="194.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/jogador-de-futebol.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="198.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Tempo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="37.0" layoutX="198.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/futebol.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="comboBoxEquipe" focusColor="#cbb26a" layoutX="245.0" layoutY="281.0" prefHeight="25.0" prefWidth="487.0" promptText="Equipe" />
+   </children>
+</AnchorPane>

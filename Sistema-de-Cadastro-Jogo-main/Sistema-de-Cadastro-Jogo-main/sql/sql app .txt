@@ -1,0 +1,99 @@
+CREATE TABLE Usuario (
+  cdUsuario SERIAL NOT NULL PRIMARY KEY,
+  email VARCHAR(100) NOT NULL,
+  nomeCompleto VARCHAR(100) NOT NULL,
+  nomeUsuario VARCHAR(50) NOT NULL,
+  senha VARCHAR(50) NOT NULL
+); 
+
+CREATE TABLE equipe (
+	idCadastroEquipe serial NOT NULL,
+	Liga varchar(40) NOT NULL,
+	Pais varchar(40) NOT NULL,
+	Tecnico varchar(40) NOT NULL,
+	nome varchar(40) NOT NULL,
+	anofundacao DATE NOT NULL,
+	CONSTRAINT Equipe_pk PRIMARY KEY (idCadastroEquipe)
+);
+
+
+CREATE TABLE Arbitro (
+  cdArbitro SERIAL NOT NULL PRIMARY KEY,
+  nome VARCHAR(100)NOT NULL,
+  cpf VARCHAR(14)NOT NULL,
+  data_nascimento DATE NOT NULL,
+  nacionalidade VARCHAR(50)NOT NULL,
+  formacao VARCHAR(100) NOT NULL
+);
+
+
+
+CREATE TABLE Jogador (
+  cdJogador SERIAL PRIMARY KEY NOT NULL,
+  nome VARCHAR(100) NOT NULL,
+  idade VARCHAR(14) NOT NULL,
+  camisa VARCHAR(50) NOT NULL,
+  equipe VARCHAR(50) NOT NULL,
+  nacionalidade VARCHAR(50) NOT NULL,
+  posicao VARCHAR(100) NOT NULL,
+  altura VARCHAR(50) NOT NULL,
+  quantidadeatual INTEGER NOT NULL
+);
+
+
+CREATE TABLE pJogo (
+  cdJogo SERIAL PRIMARY KEY NOT NULL,
+  timefora VARCHAR(100) NOT NULL,
+  timecasa VARCHAR(100) NOT NULL,
+  golfora VARCHAR(50) NOT NULL,
+  golcasa VARCHAR(50) NOT NULL,
+  arbitro VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE Cartao (
+  cdCartao SERIAL PRIMARY KEY,
+  cdArbitro INTEGER REFERENCES Arbitro(cdArbitro) NOT NULL,
+  cdJogador INTEGER REFERENCES Jogador(cdJogador) NOT NULL,
+  data DATE NOT NULL,
+  cdJogo INTEGER REFERENCES pJogo(cdJogo),
+  corCartao VARCHAR(10),
+  quantidade INT
+);
+
+
+INSERT INTO arbitro (nome, cpf, data_nascimento, nacionalidade, formacao)
+VALUES ('Sandro Meira Ricci', '12345678273', '1974-09-19', 'Brasileiro', 'CBF');
+
+INSERT INTO arbitro (nome, cpf, data_nascimento, nacionalidade, formacao)
+VALUES ('Wilton Pereira Sampaio', '13452333433', '1980-09-29', 'Brasileiro', 'CBF');
+
+INSERT INTO arbitro (nome, cpf, data_nascimento, nacionalidade, formacao)
+VALUES ('Raphael Claus', '14569002342', '1990-09-19', 'Brasileiro', 'CBF');
+
+
+INSERT INTO equipe (Liga, Pais, Tecnico, nome, anofundacao)
+VALUES ('Premier League', 'Inglaterra', 'Jurgen Klopp', 'Liverpool FC', '1892-06-03');
+
+INSERT INTO equipe (Liga, Pais, Tecnico, nome, anofundacao)
+VALUES ('Premier League', 'Inglaterra', 'Ole Gunnar Solskjær', 'Manchester United', '1878-04-01');
+
+INSERT INTO equipe (Liga, Pais, Tecnico, nome, anofundacao)
+VALUES ('La Liga', 'Espanha', 'Carlo Ancelotti', 'Real Madrid', '1902-03-06'); 
+
+INSERT INTO Jogador (nome, idade, camisa, equipe, nacionalidade, posicao, altura, quantidadeatual)
+VALUES ('Neymar', '29', '10', 'Paris Saint-Germain', 'Brasil', 'Atacante', '1.75m', 20),
+       ('Lionel Messi', '34', '30', 'Paris Saint-Germain', 'Argentina', 'Meio-campista', '1.70m', 15),
+       ('Cristiano Ronaldo', '36', '7', 'Manchester United', 'Portugal', 'Atacante', '1.87m', 18);
+
+INSERT INTO pJogo (timefora, timecasa, golfora, golcasa, arbitro)
+VALUES ('Barcelona', 'Real Madrid', '2', '1', 'Michael Smith');
+
+INSERT INTO pJogo (timefora, timecasa, golfora, golcasa, arbitro)
+VALUES ('Manchester United', 'Liverpool', '0', '0', 'David Johnson');
+
+INSERT INTO pJogo (timefora, timecasa, golfora, golcasa, arbitro)
+VALUES ('Bayern Munich', 'Juventus', '3', '2', 'Maria Garcia');
+
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cadastrojogo.controller.FXMLRelatorioCartoesController">
+   <children>
+      <Pane prefHeight="145.0" prefWidth="1000.0" style="-fx-background-color: #212121;">
+         <children>
+            <Label layoutX="409.0" layoutY="51.0" prefHeight="43.0" prefWidth="212.0" text="Relatório Cartões" textFill="#cbb26a">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="145.0" fitWidth="162.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/footmach2%20cópia.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="116.0" fitWidth="103.0" layoutX="883.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo%20relatorio1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="tableViewCartoes" layoutX="231.0" layoutY="150.0" prefHeight="333.0" prefWidth="483.0">
+         <columns>
+            <TableColumn fx:id="tableColumnJogador" prefWidth="106.0" text="Nome Jogador" />
+            <TableColumn fx:id="tableColumnQuantidadeCartoes" prefWidth="96.0" text="Quantidade de Cartões" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="buttonImprimir" layoutX="426.0" layoutY="516.0" onAction="#handleImprimir" style="-fx-background-color: cbb26a;" text="Imprimir">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package cadastrojogo.javafx.mensageiro;
+
+service CadastroJogo {
+    rpc InserirDadosJogo (DadosJogoRequest) returns (DadosJogoResponse);
+}
+
+message DadosJogoRequest {
+    string time_fora = 1;
+    string time_casa = 2;
+    string gols_fora = 3;
+    string gols_casa = 4;
+    string arbitro = 5;
+}
+
+message DadosJogoResponse {
+    string mensagem = 1;
+}

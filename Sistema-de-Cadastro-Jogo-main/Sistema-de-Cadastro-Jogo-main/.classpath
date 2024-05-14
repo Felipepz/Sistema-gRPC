@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="cadastrojogo/model/database/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/cadastrojogo/model/database"/>
+	<classpathentry kind="lib" path="dist/CadastroJogo.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jfoenix-8.0.10.jar"/>
+	<classpathentry kind="lib" path="dist/lib/mysql-connector-j-8.0.32.jar"/>
+	<classpathentry kind="lib" path="dist/lib/postgresql-42.2.5.jar"/>
+	<classpathentry kind="lib" path="lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar"/>
+	<classpathentry kind="lib" path="lib/jfoenix-8.0.10.jar"/>
+	<classpathentry kind="lib" path="lib/junit_4/junit-4.12-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/junit_4/junit-4.12-sources.jar"/>
+	<classpathentry kind="lib" path="lib/junit_4/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-j-8.0.32.jar"/>
+	<classpathentry kind="lib" path="lib/postgresql-42.2.5.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

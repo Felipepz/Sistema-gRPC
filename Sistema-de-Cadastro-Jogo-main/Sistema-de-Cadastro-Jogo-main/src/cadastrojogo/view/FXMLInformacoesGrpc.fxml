@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cadastrojogo.controller.FXMLInformacoesGrpcController">
+   <children>
+      <Pane layoutX="-5.0" prefHeight="134.0" prefWidth="1012.0" style="-fx-background-color: #212121;">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="167.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/footmach2%20cópia.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="426.0" layoutY="67.0" prefHeight="38.0" prefWidth="142.0" text="Dados Grpc" textFill="#cbb26a">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="134.0" prefHeight="474.0" prefWidth="1007.0" style="-fx-background-color: #353535;">
+         <children>
+            <TableView fx:id="tableViewDados" layoutX="165.0" layoutY="51.0" prefHeight="372.0" prefWidth="708.0">
+              <columns>
+                <TableColumn fx:id="tableColumnTimeCasa" prefWidth="105.0" text="Time Casa" />
+                <TableColumn fx:id="tableColumnTimeFora" prefWidth="111.0" text="Time Fora" />
+                  <TableColumn fx:id="tableColumnArbitro" prefWidth="114.0" text="Arbitro" />
+                  <TableColumn fx:id="tableColumnGolCasa" prefWidth="128.0" text="Gol Casa" />
+                  <TableColumn fx:id="tableColumnGolFora" prefWidth="123.0" text="Gol Fora" />
+                  <TableColumn fx:id="tableColumnTimeVencedor" prefWidth="126.0" text="Time Vencedor" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
